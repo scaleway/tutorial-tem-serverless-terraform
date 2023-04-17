@@ -1,7 +1,7 @@
 terraform {
   required_providers {
     scaleway = {
-      source = "terraform.local/local/scaleway"
+      source = "scaleway/scaleway"
     }
   }
   required_version = ">= 0.13"

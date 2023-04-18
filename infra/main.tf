@@ -13,6 +13,7 @@ variable "domain_name" {
 
 resource "scaleway_tem_domain" "main" {
   name = var.domain_name
+  accept_tos = true
 }
 
 resource "scaleway_domain_record" "dkim" {

@@ -7,12 +7,8 @@ terraform {
   required_version = ">= 0.13"
 }
 
-variable "domain_name" {
-
-}
-
 resource "scaleway_tem_domain" "main" {
-  name = var.domain_name
+  name       = var.domain_name
   accept_tos = true
 }
 
